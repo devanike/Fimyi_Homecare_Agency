@@ -1,0 +1,348 @@
+:root {
+    /* --voodoo: #502D44; */
+    --voodoo: #633D58;
+    --contessa: #D27571;
+    --white: #fff
+}
+
+@media only screen and (min-width: 768px) {
+    .inner-container {
+        width: 70%;
+        margin: auto;
+    }
+
+    .container::-webkit-scrollbar {
+        display: block;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: var(--contessa);
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: var(--voodoo);
+    }
+
+    /* TOPBAR */
+    .topbar {
+        font-size: 1rem;
+        justify-content: space-around;
+        /* padding: 0 3rem; */
+        gap: 1rem;
+    }
+
+    .grid {
+        /* grid-template-columns: repeat(3, 1fr); */
+    }
+
+    .view ul {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .socials {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    /* HERO */
+    .hero {
+        height: 30.5rem;
+    }
+
+    form {
+        width: 100%;
+        height: 30rem;
+        background: #F6F7FB;
+    }
+
+    .hero label {
+        height: 30rem;
+    }
+
+    .hero .text {
+        margin-left: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .hero h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    /* visit */
+    .visit {
+        padding: 2rem 1rem;
+    }
+
+    .visit a {
+        font-size: 1.2rem;
+    }
+
+    .visit i {
+        display: inline;
+    }
+
+    /* info */
+    .info {
+        font-size: 1.2rem;
+    }
+
+    /* services slide */
+    .services {
+        padding: 2rem 0;
+    }
+
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+
+    .services h1, .docs h1 {
+        font-size: 3rem;
+    }
+
+    .wrapper {
+        margin-bottom: 2rem;
+    }
+
+    .card p {
+        font-size: 1.2rem;
+    }
+
+    .carousel.flex .card {
+        width: 20rem;
+    }
+
+    .carousel.flex {
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    /* individual service page */
+    .service {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .image-section {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .image-section img {
+        width: 70%;
+        height: 28rem;
+    }
+
+    .columns {
+        width: 100%;
+        flex-direction: row;
+        margin: auto;
+        padding: 2rem;
+    }
+
+    .column {
+        width: 33.33%;
+    }
+
+    .column h1 {
+        font-size: 2rem;
+    }
+
+    .full-width-text {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    /* docs */
+    .docs label {
+        width: 33.3%;
+    }
+
+    /* blog */
+    .update-info p {
+        font-size: 1rem;
+        width: 60%;
+    }
+
+    .update h1 {
+        margin-bottom: 1rem;
+    }
+
+    .update-info {
+        flex-direction: row;
+    }
+    
+    .line {
+        width: 15%;
+    }
+
+    .blog-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .blog-card p{
+        font-size: 1rem;
+    }
+
+    /* quotes */
+    .slideshow-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .quote-slide {
+        width: 30%;
+        /* display: flex; */
+    }
+
+    .quote-slide.active {
+        display: flex;
+        /* width: 100%; */
+    }
+
+    /* about */
+    .image-container img {
+        height: 30rem;
+        border-bottom-right-radius: 3rem;
+        border-top-left-radius: 3rem;
+        margin-bottom: -7rem;
+    }
+
+    .text-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem; 
+    }
+
+    .colored-container {
+        padding-top: 12rem;
+    }
+    
+    .text-row {
+        font-size: 1.2rem;
+        width: 45%;
+    }
+
+    .about h1 {
+        font-size: 3rem;
+    }
+
+    .tabs label span {
+        display: block;
+    }
+
+    .tab__content img {
+        height: 30rem;
+    }
+
+    /* pricing */
+    .pricing-table {
+        flex-direction: row;
+    }
+
+    /* contact form */
+    .contact-form {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contact-form form {
+        justify-content: space-between;
+        max-width: 40rem;
+    }
+    
+    .form-text {
+        max-width: 40rem;
+    }
+    
+    /* contact */
+    .overlay h1 {
+        font-size: 3rem;
+    }
+    
+    .contact-info .phone-numbers {
+        font-size: 1.2rem;
+    }
+
+    /* footer */
+    .footer .footer-row {
+        padding: 60px;
+    }
+
+    .footer-col p {
+        width: 20rem;
+    }
+}
+
+@media all and (min-width: 1040px) {
+    nav {
+        padding: 1rem 4rem;
+    }
+
+    .menu {
+        flex-wrap: nowrap;
+    }
+
+    .menu:not(.logo) {
+        justify-content: flex-end;
+    }
+
+    .logo {
+        order: 0;
+        font-size: 2rem;
+        flex: 1;
+    }
+    
+    .logo a {
+        max-width: 23rem;
+    }
+
+    .item {
+        order: 2;
+        position: relative;
+        display: block;
+        width: auto;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 4) - 12px);
+        /* grid-auto-columns: calc((100% / 2) - 9px); */
+    }
+
+}
+
+@media all and (min-width: 500px) {
+    .logo {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid var(--contessa);
+    flex-basis: 100%;
+    padding: 25px 50px;
+    }
+
+    .pricing-plan:last-child {
+    border-right: none;
+    }
+}
+

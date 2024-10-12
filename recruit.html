@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/css/form.css">
+    <title>Recruitment Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Fimyi Home Care Agency</h1>
+        <h2>Recruitment Application</h2>
+        
+        <div action="submit_form.php" method="POST">
+            <h3>1. Personal Information</h3>
+            <div class="form-group">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required><br>
+            </div>
+            
+            <div class="form-group">
+                <label for="date-of-birth">Date of Birth:</label>
+                <input type="date" id="date-of-birth" name="date-of-birth" required><br>
+            </div>
+            
+            <div class="form-group">
+                <label for="address">Address:</label><br>
+                <textarea id="address" name="address" rows="3" required></textarea><br>
+            </div>
+
+            <div class="form-group">
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" name="phone-number" required><br>
+            </div>
+            
+            <div class="form-group">
+                <label for="email-address">Email Address:</label>
+                <input type="email" id="email-address" name="email-address" required><br>
+            </div>
+            
+            <h3>2. Position Applied For</h3>
+            <div class="form-group">
+                <label>Position:</label><br>
+                <input type="checkbox" name="position[]" value="Maid"> Maid<br>
+                <input type="checkbox" name="position[]" value="Health Care Giver"> Health Care Giver<br>
+                <input type="checkbox" name="position[]" value="Nurse"> Nurse<br>
+                <input type="checkbox" name="position[]" value="Physiotherapist"> Physiotherapist<br>
+                <input type="checkbox" name="position[]" value="Psychiatrist"> Psychiatrist<br>
+                <input type="checkbox" name="position[]" value="Doctor"> Doctor<br>
+                <input type="text" name="position_other" placeholder="Other (Specify)">
+            </div>
+            
+            <div class="form-group">
+                <label for="desired-salary">Desired Salary:</label>
+                <input type="text" id="desired-salary" name="desired-salary"><br>
+            </div>
+
+            <div class="form-group">
+                <label for="availability">Availability (Full-time/Part-time):</label>
+                <input type="text" id="availability" name="availability"><br>
+            </div>
+
+            <div class="form-group">
+                <label for="preferred-start-date">Preferred Start Date:</label>
+                <input type="date" id="preferred-start-date" name="preferred-start-date"><br>
+            </div>
+
+            <h3>3. Availability</h3>
+            <div class="form-group">
+                <label for="available-start">When are you available to start?</label><br>
+                <input type="radio" id="monday-available" name="monday_availability" value="Available">
+                <label for="monday-available">Monday</label><br>
+
+                <input type="radio" id="tuesday-available" name="tuesday_availability" value="Available">
+                <label for="tuesday-available">Tuesday</label><br>
+
+                <input type="radio" id="wednesday-available" name="wednesday_availability" value="Available">
+                <label for="wednesday-available">Wednesday</label><br>
+
+                <input type="radio" id="thursday-available" name="thursday_availability" value="Available">
+                <label for="thursday-available">Thursday</label><br>
+
+                <input type="radio" id="friday-available" name="friday_availability" value="Available">
+                <label for="friday-available">Friday</label><br>
+
+                <input type="radio" id="saturday-available" name="saturday_availability" value="Available">
+                <label for="saturday-available">Saturday</label><br>
+
+                <input type="radio" id="sunday-available" name="sunday_availability" value="Available">
+                <label for="sunday-available">Sunday</label><br>
+            </div>
+
+            
+
+            <h3>4. Education and Training</h3>
+            <div class="form-group">
+                <label>Highest Level of Education Completed:</label><br>
+                <input type="checkbox" name="education[]" value="High School Diploma"> High School Diploma<br>
+                <input type="checkbox" name="education[]" value="Associate Degree"> Associate Degree<br>
+                <input type="checkbox" name="education[]" value="Bachelor’s Degree"> Bachelor’s Degree<br>
+                <input type="checkbox" name="education[]" value="Master’s Degree"> Master’s Degree<br>
+                <input type="checkbox" name="education[]" value="Doctorate"> Doctorate<br>
+                <input type="text" name="education_other" placeholder="Other (Specify)">
+            </div>
+
+            <div class="form-group">
+                <label for="">Relevant Certifications (check all that apply)</label><br>
+                <input type="checkbox" name="certifications[]" value="CPR/First Aid Certification"> CPR/First Aid Certification<br>
+                <input type="checkbox" name="certifications[]" value="CNA Certification"> CNA Certification<br>
+                <input type="checkbox" name="certifications[]" value="Home Health Aide Certification"> Home Health Aide Certification<br>
+                <input type="checkbox" name="certifications[]" value="Nursing License"> Nursing License<br>
+                <input type="checkbox" name="certifications[]" value="Physiotherapy License"> Physiotherapy License<br>
+                <input type="checkbox" name="certifications[]" value="Psychiatry License"> Psychiatry License<br>
+                <input type="checkbox" name="certifications[]" value="Medical License"> Medical License<br>
+                <input type="text" name="certifications_other" placeholder="Other (Specify)">
+            </div>
+
+            <div class="input-group">
+                <div class="div">
+                    <label for="certification-file-1">Upload Certification File 1:</label><br>
+                    <input type="file" id="certification-file-1" name="certification_file_1"><br>
+                </div>
+                <div>
+                    <label for="certification-file-2">Upload Certification File 2:</label><br>
+                    <input type="file" id="certification-file-2" name="certification_file_2"><br>
+                </div>
+                <div>
+                    <label for="certification-file-3">Upload Certification File 3:</label>
+                    <input type="file" id="certification-file-3" name="certification_file_3">
+                </div>
+                <div>
+                    <label for="certification-file-4">Upload Certification File 4:</label>
+                    <input type="file" id="certification-file-4" name="certification_file_4">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="school">School/Training Program Name:</label>
+                <input type="text" id="school" name="school">
+            </div>
+
+            <div class="form-group">
+                <label for="year-completed">Year Completed:</label>
+            <input type="text" id="year-completed" name="year_completed">
+            </div>
+
+            <h3>5. Work Experience</h3>
+            <div class="form-group">
+                <label for="previous-employment-1">Last Employment</label>
+                <input type="text" id="previous-employment-1" name="previous_employment_1_employer" placeholder="Employer Name 1">
+            </div>
+            <div class="form-group">
+                <input type="text" name="previous_employment_1_position" placeholder="Position Held 1">
+            </div>
+            <div class="form-group">
+                <input type="text" name="previous_employment_1_dates" placeholder="Dates of Employment 1">
+            </div>
+            <div class="form-group">
+                <textarea name="previous_employment_1_responsibilities" placeholder="Responsibilities 1"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="previous-employment-2"></label>
+                <input type="text" id="previous-employment-2" name="previous_employment_2_employer" placeholder="Employer Name 2">
+            </div>
+            <div class="form-group">
+                <input type="text" name="previous_employment_2_position" placeholder="Position Held 2">
+            </div>
+            <div class="form-group">
+                <input type="text" name="previous_employment_2_dates" placeholder="Dates of Employment 2"><br>
+            </div>
+            <div class="form-group">
+                <textarea name="previous_employment_2_responsibilities" placeholder="Responsibilities 2"></textarea>
+            </div>
+
+            <h3>6. Skills and Qualifications</h3>
+            <div class="form-group">
+                <label for="skills">Please list any relevant skills or qualifications:</label>
+                <textarea id="skills" name="skills" rows="4"></textarea>    
+            </div>
+
+            <div class="input-group">
+                <div class="div">
+                    <label for="file-1">Upload File 1:</label><br>
+                    <input type="file" id="file-1" name="file_1"><br>
+                </div>
+                <div>
+                    <label for="file-2">Upload File 2:</label><br>
+                    <input type="file" id="file-2" name="file_2"><br>
+                </div>
+            </div>
+
+            <h3>7. References</h3>
+            <div class="form-group">
+                <label for="reference-1-name">Reference #1 Name:</label>
+                <input type="text" id="reference-1-name" name="reference_1_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="reference-1-contact">Reference #1 Contact Information:</label>
+                <input type="text" id="reference-1-contact" name="reference_1_contact" required>
+            </div>
+
+            <div class="form-group">
+                <label for="reference-2-name">Reference #2 Name:</label>
+                <input type="text" id="reference-2-name" name="reference_2_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="reference-2-contact">Reference #2 Contact Information:</label>
+                <input type="text" id="reference-2-contact" name="reference_2_contact" required>
+            </div>
+
+            <h3>8. Additional Information</h3>
+            <div class="form-group">
+                <label for="why-home-care">Why do you want to work in home care?</label>
+                <textarea id="why-home-care" name="why_home_care" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="background-check">Are you willing to undergo a background check?</label><br>
+                <input type="checkbox" id="background-check" name="background_check" value="Yes"> Yes<br>
+                <input type="checkbox" name="background_check" value="No"> No
+            </div>
+
+            <div class="form-group">
+                <label for="drivers-license">Do you have a valid driver's license?</label><br>
+                <input type="checkbox" id="drivers-license" name="drivers_license" value="Yes"> Yes<br>
+                <input type="checkbox" name="drivers_license" value="No"> No
+            </div>
+            
+            <div class="form-group">
+                <!-- <label for="consent">I acknowledge that the information provided in this form is true and accurate to the best of my knowledge.</label><br> -->
+                <input type="checkbox" id="consent" name="consent" value="I Agree" required> I certify that the information provided in this application is true and complete to the best of my knowledge. I understand that providing false information may result in disqualification from employment or termination if employed.
+            </div>
+            <!-- Submit Button with Tooltip -->
+            <div class="tooltip">
+                <button type="submit" id="submitBtn" disabled>Submit</button>
+                <span class="tooltiptext">Please agree to the terms</span>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const consentCheckbox = document.getElementById('consent');
+        const submitBtn = document.getElementById('submitBtn');
+        const tooltipText = document.querySelector('.tooltiptext');
+
+        consentCheckbox.addEventListener('change', function () {
+            if (this.checked) {
+                submitBtn.disabled = false;
+                tooltipText.style.visibility = 'hidden'; 
+            } else {
+                submitBtn.disabled = true; 
+                tooltipText.style.visibility = 'visible'; 
+            }
+        });
+    </script>
+</body>
+</html>

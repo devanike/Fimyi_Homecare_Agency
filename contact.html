@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3ed11200e3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Assets/css/styles.css">
+    <link rel="stylesheet" href="./Assets/css/queries.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="container">
+        <header class="topbar p-all flex">
+            <div class="view">
+                <ul class="flex-col">
+                    <li class="flex"><i class="fa-solid fa-phone"></i> +234 813 456 3456</li>
+                    <li><a href="" class="flex"><i class="fa-solid fa-download"></i> Download our Brochure</a></li>
+                    <li><a href="" class="flex"><i class="fa-solid fa-newspaper"></i> View our Government Approval Letter</a></li>
+                </ul>
+            </div>
+            <div class="socials">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </header>
+
+        <!-- NAVBAR -->
+        <nav>
+            <!-- class="active-item" -->
+            <ul class="menu flex">
+                <li class="logo"><a href="index.html">Fimyi Homecare Agency</a></li>
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="about.html">About Us</a></li>
+                <li class="item"><a href="services.html">Services</a></li>
+                <li class="item"><a href="pricing.html">cost rates</a></li>
+                <li class="item"><a href="careers.html">careers</a></li>
+                <li class="item"><a href="contact.html">contact us</a></li>
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+
+        <!-- contact form -->
+        <div class="contact-form flex">
+            <div class="form-text">
+                <h2>How can we be of help?</h2>
+                <p>Please complete the contact information and let us know your needs. Upon receiving your information, one of our team members will reach you. Thank you!</p>
+            </div>
+            <form class="flex-col">
+                <div class="form-group">
+                    <!-- <label for="firstName">First Name</label> -->
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                    <!-- <label for="lastName">Last Name</label> -->
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                </div>
+                <div class="form-group">
+                    <!-- <label for="email">Email</label> -->
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <!-- <label for="phone">Phone Number</label> -->
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <!-- <label for="typeOfCare">Type of Care</label> -->
+                    <select id="typeOfCare" name="typeOfCare" required>
+                        <option value="">Select Type of Care</option>
+                        <option value="Medical Care">Palliative & Hospice Care</option>
+                        <option value="Home Care">Personal Care Services/Companionship</option>
+                        <option value="Child Care">Skilled Nursing Care Services</option>
+                        <option value="Child Care">In-home Physical Therapy</option>
+                        <option value="Child Care">Home-based Medical Care</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <!-- <label for="careRecipient">Care Recipient Full Name</label> -->
+                    <input type="text" id="careRecipient" name="careRecipient" placeholder="Care Recipient's Full Name" required>
+                </div>
+                <a href="" class="btn">Submit</a>
+            </form>
+        </div>
+        
+
+        <section class="contact">
+            <div class="overlay">
+                <h1>Get In Touch</h1>
+                <div class="contact-info">
+                    <a href="" class="btn">Call Us</a>
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="phone-numbers">
+                        <span>+123-456-7890</span><br>
+                        <span>+098-765-4321</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <p class="links">Fimyi Homecare Agency is a standard and well-coordinated domiciliary care service provider. We offer preventive, curative, rehabiliative and palliative healthcare services to seniors in a systematic way that simulates bringing the hospital to the comfort of your  home.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Cost Rates</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Socials</h4>
+                    <ul class="links">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./Assets/scripts/script.js"></script>
+</body>
+</html>

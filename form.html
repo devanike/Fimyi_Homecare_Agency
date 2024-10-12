@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/css/form.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Fimyi Home Care Agency</h1>
+        <h2>Questionnaire</h2>
+        
+        <form action="#">
+            <!-- Personal Information Section -->
+            <div class="section">
+                <h3>1. Personal Information</h3>
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="First, Middle, Last" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label>Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="Male"> Male<br>
+                    <input type="radio" id="female" name="gender" value="Female"> Female<br>
+                    <input type="radio" id="other" name="gender" value="Other"> Other
+                </div>
+                <div class="form-group">
+                    <label for="address">Home Address:</label>
+                    <input type="text" id="address" name="address" placeholder="Enter home address">
+                </div>
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" placeholder="Enter city" required>
+                </div>
+                <div class="form-group">
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state" placeholder="Enter state" required>
+                </div>
+                <div class="form-group">
+                    <label for="zip">Zip Code:</label>
+                    <input type="text" id="zip" name="zip" placeholder="Enter zip code" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email" required>
+                </div>
+                <div class="form-group">
+                    <label for="emergencyContactName">Emergency Contact Name:</label>
+                    <input type="text" id="emergencyContactName" name="emergencyContactName" placeholder="Enter emergency contact name" required>
+                </div>
+                <div class="form-group">
+                    <label for="emergencyContactRelationship">Emergency Contact Relationship:</label>
+                    <input type="text" id="emergencyContactRelationship" name="emergencyContactRelationship" placeholder="Enter emergency contact relationship" required>
+                </div>
+                <div class="form-group">
+                    <label for="emergencyContactPhone">Emergency Contact Phone Number:</label>
+                    <input type="tel" id="emergencyContactPhone" name="emergencyContactPhone" placeholder="Enter emergency contact phone number" required>
+                </div>
+            </div>
+
+            <!-- Medical Information Section -->
+            <div class="section">
+                <h3>2. Medical Information</h3>
+                <div class="form-group">
+                    <label for="primaryDiagnosis">Primary Diagnosis/Condition:</label>
+                    <input type="text" id="primaryDiagnosis" name="primaryDiagnosis" placeholder="Enter primary diagnosis" required>
+                </div>
+                <div class="form-group">
+                    <label for="secondaryDiagnosis">Secondary Diagnosis/Conditions (if any):</label>
+                    <input type="text" id="secondaryDiagnosis" name="secondaryDiagnosis"placeholder="Enter secondary diagnosis" >
+                </div>
+                <div class="form-group">
+                    <label>Is the patient currently receiving any medical treatments?</label><br>
+                    <input type="radio" id="treatmentYes" name="medicalTreatment" value="Yes"> Yes<br>
+                    <input type="radio" id="treatmentNo" name="medicalTreatment" value="No"> No
+                </div>
+                <div class="form-group">
+                    <label for="treatmentDetails">If yes, please specify:</label>
+                    <input type="text" id="treatmentDetails" name="treatmentDetails">
+                </div>
+                <div class="form-group">
+                    <label for="allergies">Allergies (medication, food, or other):</label>
+                    <input type="text" id="allergies" name="allergies" placeholder="Enter allergies">
+                </div>
+                <div class="form-group">
+                    <label for="medication1">Medications Currently Taking (name and dosage):</label>
+                    <div class="input-group">
+                        <div>
+                            <input type="text" id="medication1" name="medication1" placeholder="Medication 1" required>
+                            <input type="text" id="medication2" name="medication2" placeholder="Medication 2">
+                            <input type="text" id="medication3" name="medication3" placeholder="Medication 3">
+                        </div>
+                        <div>
+                            <input type="text" id="dosage1" name="dosage1" placeholder="Dosage 1" required>
+                            <input type="text" id="dosage2" name="dosage2" placeholder="Dosage 2">
+                            <input type="text" id="dosage3" name="dosage3" placeholder="Dosage 3">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="additionalMedications">Additional Medications:</label>
+                    <input type="text" id="additionalMedications" name="additionalMedications" placeholder="List any additional medications here">
+                </div>
+                <div class="form-group">
+                    <label for="mobilityStatus">Mobility Status:</label><br>
+                    <input type="radio" id="fullyMobile" name="mobility" value="Fully Mobile"> Fully Mobile<br>
+                    <input type="radio" id="requiresAssistance" name="mobility" value="Requires Assistance"> Requires Assistance<br>
+                    <input type="radio" id="bedridden" name="mobility" value="Bedridden"> Bedridden
+                </div>
+                <div class="form-group">
+                    <label for="medicalEquipment">Any current medical equipment used:</label>
+                    <input type="text" id="medicalEquipment" name="medicalEquipment">
+                </div>
+                <div class="form-group">
+                    <label for="medicalHistory">History of Chronic Illness:</label><br>
+                    <input type="checkbox" id="diabetes" name="history" value="Diabetes"> Diabetes <br>
+                    <input type="checkbox" id="hypertension" name="history" value="Hypertension"> Hypertension<br>
+                    <input type="checkbox" id="hearingImpairment" name="history" value="Hearing Impairment"> Hearing Imparirment <br>
+                    <input type="checkbox" id="dental" name="history" value="Dental Problems"> Dental Problems<br>
+                    <input type="checkbox" id="stroke" name="history" value="Stroke/TIA"> Stroke/TIA<br>
+                    <input type="checkbox" id="sleepingProb" name="history" value="Sleeping Problems">  Sleeping Problems<br>
+                    <input type="checkbox" id="arthritis" name="history" value="Arthritis "> Arthritis <br>
+                    <input type="checkbox" id="difficulty" name="history" value="Difficulty moving around "> Difficulty moving around <br>
+                    <input type="checkbox" id="blind" name="history" value="Blindness or Partial Blindness">  Blindness or Partial Blindness<br>
+                    <input type="checkbox" id="heartFail" name="history" value="Congestive Heart Failure "> Congestive Heart Failure <br>
+                    <input type="checkbox" id="dementia" name="history" value="History suggestive of Dementia"> History suggestive of Dementia (difficulty remembering or retaining information)<br>
+                    <input type="checkbox" id="mental" name="history" value="History suggestive of Mental illness"> History suggestive of Mental illness (psychosis, depression)<br>
+                    <input type="checkbox" id="terminal" name="history" value="Terminal illness"> Terminal illness<br>
+                </div>
+            </div>
+
+            <!-- Care Needs Section -->
+            <div class="section">
+                <h3>3. Care Needs</h3>
+                <p>What does the client need help with?</p>
+                <p><span>A or B</span></p>
+                <h4>A. CAREGIVERS</h4>
+                <div class="form-group">
+                    <label for="careType">Type of Care Needed:</label><br>
+                    <input type="checkbox" id="personalCare1" name="careType" value="Personal Care 1"> <span>Personal Care</span> (Bathing, Dressing, Feeding)<br>
+                    <input type="checkbox" id="personalCare2" name="careType" value="Personal Care 2"> <span>Personal Care</span> (Assisting with toileting and incontinence care )<br>
+                    <input type="checkbox" id="companionship" name="careType" value="Companionship"> <span>Companionship</span> (Engaging in conversation and social activities, Assisting with recreational activties)<br>
+                    <input type="checkbox" id="mealPrep" name="careType" value="Meal Preparation"> Meal Preparation<br>
+                    <input type="checkbox" id="grocery" name="careType" value="Grocery Shopping"> Assistance with Grocery Shopping and other errands for the client only<br>
+                    <input type="checkbox" id="phyTherapy" name="careType" value="Physical Therapy"> <span>Physical Therapy</span> (Personalized exercise plan, Improved range of motion & coordination, Walking & mobility exercise, Training on use of mobility aids)<br>
+                    <input type="checkbox" id="speechTherapy" name="careType" value="Speech Therapy"> <span>Speech Therapy</span> (Exercises to improve speech and communication)<br>
+                    <input type="checkbox" id="occuTherapy" name="careType" value="Occupation Therapy">  <span>Occupation Therapy</span> (Teaching skill for self-care, Helping patients use assistive device)<br>
+                    <input type="checkbox" id="housekeeping" name="careType" value="Light Housekeeping & Laundry">  Light Housekeeping & Laundry<br>
+                    <input type="checkbox" id="alzheimer" name="careType" value="Alzheimer">  <span>Alzheimer's / Dementia Care</span> (Creating a safe environment for wandering or memory issues, engaging patient in acivities that stimulate memory, providing personal care and managing challenging behaviour, offering emotional support and guidance to family members)<br>
+                    <!-- <input type="checkbox" id="otherCare" name="careType" value="Other"> Other -->
+                    <input type="checkbox" id="transportation" name="careType" value="Transportation"> Transportation<br>
+                    <label for="transAvailablePat">Transportation Available For Patient?</label><br>
+                    <input type="radio" id="yesTransportPat" name="yesTransportPat" value="Yes"> Yes<br>
+                    <input type="radio" id="noTransportPat" name="noTransportPat" value="No"> No<br>
+                    <label for="transAvailableCare">Transportation Available For Caregiver?</label><br>
+                    <input type="radio" id="yesTransportCare" name="yesTransportCare" value="Yes"> Yes<br>
+                    <input type="radio" id="noTransportCare" name="noTransportCare" value="No"> No<br>
+                </div>
+                <h4>B. REGISTERED NURSES</h4>
+                <div class="form-group">
+                    <label for="careType">Type of Care Needed:</label><br>
+                    <input type="checkbox" id="postSurgical" name="careType" value="Post-Surgical"> <span>Post-Surgical Management</span> (Surgical wound care, infection monitoring or care of drainage tubes)<br>
+                    <input type="checkbox" id="skilledCare" name="careType" value="Skilled Care"> <span>Highly Skilled Nursing Care</span> (Tracheostomy, PEG Tube Feeding, Care  of central venous line)<br>
+                    <input type="checkbox" id="personalCare1" name="careType" value="Personal Care 1"> <span>Personal Care</span> (Bathing, Dressing, Feeding)<br>
+                    <input type="checkbox" id="personalCare2" name="careType" value="Personal Care 2"> <span>Personal Care</span> (Assisting with toileting and incontinence care )<br>
+                    <input type="checkbox" id="medicalAssistance1" name="careType" value="Medical Assistance 1"> <span>Medical Assistance</span> (Blood pressure, respiration, temperature, pulse rate)<br>
+                    <input type="checkbox" id="medicalAssistance2" name="careType" value="Medical Assistance 2"> <span>Medical Assistance</span> (Wound care and dressing, Injection and IV therapy, Pain Management)<br>
+                    <input type="checkbox" id="companionship" name="careType" value="Companionship"> <span>Companionship</span> (Engaging in conversation and social activities, Assisting with recreational activties)<br>
+                    <input type="checkbox" id="mealPrep" name="careType" value="Meal Preparation"> Meal Preparation<br>
+                    <input type="checkbox" id="phyTherapy" name="careType" value="Physical Therapy"> <span>Physical Therapy</span> (Personalized exercise plan, Improved range of motion & coordination, Walking & mobility exercise, Training on use of mobility aids)<br>
+                    <input type="checkbox" id="speechTherapy" name="careType" value="Speech Therapy"> <span>Speech Therapy</span> (Exercises to improve speech and communication)<br>
+                    <input type="checkbox" id="counselling" name="careType" value="Counselling and Physiotherapy"> Counselling & Physiotherapy<br>
+                    <input type="checkbox" id="occuTherapy" name="careType" value="Occupation Therapy">  <span>Occupation Therapy</span> (Teaching skill for self-care, Helping patients use assistive device)<br>
+                    <input type="checkbox" id="alzheimer" name="careType" value="Alzheimer">  <span>Alzheimer's / Dementia Care</span> (Creating a safe environment for wandering or memory issues, engaging patient in acivities that stimulate memory, providing personal care and managing challenging behaviour, offering emotional support and guidance to family members)<br>
+                    <!-- <input type="checkbox" id="otherCare" name="careType" value="Other"> Other -->
+                    <input type="checkbox" id="transportation" name="careType" value="Transportation"> Transportation<br>
+                    <label for="transAvailablePat">Transportation Available For Patient?</label><br>
+                    <input type="radio" id="yesTransportPat" name="yesTransportPat" value="Yes"> Yes<br>
+                    <input type="radio" id="noTransportPat" name="noTransportPat" value="No"> No<br>
+                    <label for="transAvailableCare">Transportation Available For Nurse?</label><br>
+                    <input type="radio" id="yesTransportCare" name="yesTransportCare" value="Yes"> Yes<br>
+                    <input type="radio" id="noTransportCare" name="noTransportCare" value="No"> No<br>
+                </div>
+                <div class="form-group">
+                    <label for="careFrequency">Frequency of Care Needed:</label><br>
+                    <input type="radio" id="daily" name="careFrequency" value="Daily"> Daily<br>
+                    <input type="radio" id="weekly" name="careFrequency" value="Weekly"> Weekly<br>
+                    <input type="radio" id="monthly" name="careFrequency" value="Monthly"> Monthly<br>
+                    <input type="radio" id="occasional" name="careFrequency" value="Occasional"> Occasional
+                </div>
+                <div class="form-group">
+                    <label>Preferred Caregiver Gender:</label><br>
+                    <input type="radio" name="caregiverGender" value="Male"> Male<br>
+                    <input type="radio" name="caregiverGender" value="Female"> Female<br>
+                    <input type="radio" name="caregiverGender" value="No Preference"> No Preference<br>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Time of Day for Care:</label><br>
+                    <input type="radio" name="careTime" value="Morning"> Morning<br>
+                    <input type="radio" name="careTime" value="Afternoon"> Afternoon<br>
+                    <input type="radio" name="careTime" value="Evening"> Evening<br>
+                    <input type="radio" name="careTime" value="Overnight"> Overnight<br>
+                    <input type="radio" name="careTime" value="24-Hour Care"> 24-Hour Care<br>
+                </div>
+                <div class="form-group">
+                    <label for="additionalCareServices">Additional Care or Services Required (if any):</label>
+                    <input type="text" id="additionalCareServices">
+                </div>
+            </div>
+
+            <!-- Medical Provider Information Section -->
+            <div class="section">
+                <h3>4. Medical Provider Information</h3>
+                <div class="form-group">
+                    <label for="primaryDoctor">Primary Doctor's Name:</label>
+                    <input type="text" id="primaryDoctor" name="primaryDoctor" placeholder="Enter primary doctor's name" required>
+                </div>
+                <div class="form-group">
+                    <label for="primaryDoctorPhone">Primary Doctor's Phone Number:</label>
+                    <input type="tel" id="primaryDoctorPhone" name="primaryDoctorPhone" placeholder="Enter primary doctor's number" required>
+                </div>
+                <div class="form-group">
+                    <label for="specialist">Specialist(s) Involved (if any):</label>
+                    <input type="text" id="specialist" name="specialist" placeholder="Enter specialist(s) name(s)">
+                </div>
+            </div>
+
+            <!-- Patient Preferences Section -->
+            <div class="section">
+                <h3>5. Patient's Preferences</h3>
+                <div class="form-group">
+                    <label for="caregiverGender">Preferred Caregiver Gender:</label><br>
+                    <input type="radio" id="maleCaregiver" name="caregiverGender" value="Male"> Male<br>
+                    <input type="radio" id="femaleCaregiver" name="caregiverGender" value="Female"> Female<br>
+                    <input type="radio" id="noPreference" name="caregiverGender" value="No Preference"> No Preference
+                </div>
+                <div class="form-group">
+                    <label for="languagePreference">Preferred Language Spoken by Caregiver:</label>
+                    <input type="text" id="languagePreference" name="languagePreference">
+                </div>
+            </div>
+
+            <!-- Consent and Acknowledgement Section -->
+            <div class="section">
+                <h3>6. Consent and Acknowledgement</h3>
+                <div class="form-group">
+                    <label for="signature">Patient's Signature (Type Full Name):</label>
+                    <input type="text" id="signature" name="signature" placeholder="Type your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="submissionDate">Date:</label>
+                    <input type="date" id="submissionDate" name="submissionDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="consent">I acknowledge that the information provided in this form is true and accurate to the best of my knowledge.</label><br>
+                    <input type="checkbox" id="consent" name="consent" value="I Agree" required> I Agree
+                </div>
+            </div>
+
+            <!-- Submit Button with Tooltip -->
+            <div class="tooltip">
+                <button type="submit" id="submitBtn" disabled>Submit</button>
+                <span class="tooltiptext">Please agree to the terms</span>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const consentCheckbox = document.getElementById('consent');
+        const submitBtn = document.getElementById('submitBtn');
+        const tooltipText = document.querySelector('.tooltiptext');
+
+        consentCheckbox.addEventListener('change', function () {
+            if (this.checked) {
+                submitBtn.disabled = false;
+                tooltipText.style.visibility = 'hidden'; 
+            } else {
+                submitBtn.disabled = true; 
+                tooltipText.style.visibility = 'visible'; 
+            }
+        });
+    </script>
+</body>
+</html>
